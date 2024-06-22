@@ -1,0 +1,179 @@
+
+
+  
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+  
+}
+
+.container {
+  height: fit-content;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* overflow-x: hidden; */
+  z-index: 2; 
+  position: fixed;
+  /* overflow: hidden; */
+  /* padding: 0rem 1rem; */
+  
+
+  
+}
+
+
+.navbar-bg{
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    justify-content: center; 
+    align-items: center; 
+  
+  
+  
+}
+
+.navbarbg{
+    width: 100%; 
+     height: 100%; 
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+    
+    
+}
+
+.logo {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    height: 60px;
+    width: 300px; 
+    
+    opacity: 0.8;
+ 
+  
+ }
+
+.lowernav{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(245, 245, 245, 0.869);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  /* flex-direction: column; */
+
+
+}
+.nav-elements{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* background-color: rgba(245, 245, 245, 0.869); */
+    /* margin-bottom: 20px; */
+    overflow-x: scroll;
+    
+    padding-left: 60px;
+    padding-right: 40px;
+
+   
+
+}
+.nav__searchbox{
+  /* margin-left: 20rem; */
+  display: flex;
+  justify-content:center;
+  
+  
+
+
+}
+
+.nav-elements ul {
+
+  display: flex;
+  justify-content: center;
+  /* gap: 1rem; */
+  list-style-type: none;
+}
+.nav-elements ul li{
+    padding: 0em 1em;
+}
+
+
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color:var(--text-color);
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  font-weight: 500;
+  position: relative;
+  
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color);
+}
+
+
+
+@media (max-width: 1100px) {
+  /* .nav-elements{
+    flex-direction: column;
+    
+  } */
+  .navbar-bg{
+    height: 50px;
+ 
+  
+  
+  
+  }
+  .lowernav{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    
+  }
+
+.logo {
+
+  height: 40px;
+  width: 200px; 
+  
+ 
+
+
+}
+  
+
+ 
+}
